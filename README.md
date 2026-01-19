@@ -86,9 +86,6 @@ JAMS.Infrastructure
 ├── Migrations
 └── Security
 
-yaml
-Copy code
-
 ---
 
 ## 🛠️ Tech Stack
@@ -118,9 +115,6 @@ POST /api/auth/register
 POST /api/auth/login
 GET /api/auth/me
 
-shell
-Copy code
-
 ### Job Applications
 POST /api/jobs
 GET /api/jobs
@@ -128,24 +122,15 @@ GET /api/jobs/{id}
 PUT /api/jobs/{id}
 DELETE /api/jobs/{id}
 
-shell
-Copy code
-
 ### Interviews
 POST /api/interviews
 GET /api/interviews/{jobApplicationId}
-
-shell
-Copy code
 
 ### Reminders
 POST /api/reminders
 GET /api/reminders/{jobApplicationId}
 PUT /api/reminders/{id}
 DELETE /api/reminders/{id}
-
-yaml
-Copy code
 
 ---
 
@@ -158,18 +143,18 @@ Copy code
 - **Reminder**
 
 ### Relationships
-- One User → Many Job Applications
-- One Job Application → Many Interviews
-- One Job Application → Many Reminders
+- One User → Many Job Applications  
+- One Job Application → Many Interviews  
+- One Job Application → Many Reminders  
 
 ---
 
 ## 🧪 Validation & Error Handling
 
-- DTO-level validation using FluentValidation
-- Business rule validation in application layer
-- Global exception handling middleware
-- Standardized API error responses
+- DTO-level validation using FluentValidation  
+- Business rule validation in application layer  
+- Global exception handling middleware  
+- Standardized API error responses  
 
 ### Example Error Response
 ```json
@@ -177,7 +162,9 @@ Copy code
   "error": "ValidationError",
   "message": "Company name is required."
 }
-🚀 Getting Started
+```
+
+## 🚀 Getting Started
 Prerequisites
 .NET 8 SDK
 
@@ -197,7 +184,8 @@ Swagger UI will be available at:
 bash
 Copy code
 https://localhost:{port}/swagger
-📈 Future Enhancements
+
+## 📈 Future Enhancements
 AI-powered resume-to-job matching
 
 Job application analytics dashboard
@@ -212,7 +200,7 @@ Dockerized deployment
 
 CI/CD pipeline integration
 
-🎓 What This Project Demonstrates
+## 🎓 What This Project Demonstrates
 Enterprise-level backend system design
 
 Secure API development practices
@@ -223,14 +211,19 @@ Real-world problem-solving ability
 
 Readiness for professional software engineering roles
 
-📄 License
+## 📄 License
 This project is developed for educational and portfolio purposes.
 
-🙌 Author
-Janusha Chamali
+## 🙌 Author
+Janusha Weerasinghe
 Final Year BSc (Hons) Computing Student
 Aspiring Software Engineer (Backend / .NET)
 
-⭐ Final Note
+## ⭐ Final Note
 This project is intentionally designed to reflect real enterprise backend systems rather than small demo applications.
+It serves as a strong foundation for further enhancements and real-world use cases.
+
+
+---
+se backend systems rather than small demo applications.
 It serves as a strong foundation for further enhancements and real-world use cases.
